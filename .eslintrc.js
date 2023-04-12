@@ -10,13 +10,9 @@ module.exports = {
     },
   },
   extends: [
-    'airbnb',
-    'airbnb/hooks',
     'eslint:recommended',
-    'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended',
+    'prettier',
   ],
   overrides: [],
   parser: '@typescript-eslint/parser',
@@ -42,22 +38,22 @@ module.exports = {
     'no-alert': 'off',
     'no-underscore-dangle': 'off',
     '@typescript-eslint/no-unused-expressions': 'off',
-    'import/order': [
-      'error',
-      {
-        'newlines-between': 'always',
-        pathGroups: [
-          {
-            pattern: '~/**',
-            group: 'external',
-            position: 'after',
-          },
-        ],
-        alphabetize: {
-          order: 'asc',
-          caseInsensitive: true,
-        },
-      },
-    ],
+    // 'import/order': [
+    //   'error',
+    //   {
+    //     'newlines-between': 'always',
+    //     pathGroups: [
+    //       {
+    //         pattern: '~/**',
+    //         group: 'external',
+    //         position: 'after',
+    //       },
+    //     ],
+    //     alphabetize: {
+    //       order: 'asc',
+    //       caseInsensitive: true,
+    //     },
+    //   },
+    // ],
   },
 }
