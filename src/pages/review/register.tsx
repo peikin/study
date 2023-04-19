@@ -1,7 +1,19 @@
 import React from 'react'
+import '../../components/review/review.css'
+import BusinessSelect from '../../components/review/businessSelect'
+import FeedBackType from '../../components/review/feedbackType'
+import ReviewContents from '../../components/review/contents'
+import SubmitButton from '../../components/review/SubmitButton'
 
 const ReviewRegister = () => {
-  return <p>등록 페이지</p>
+  return (
+    <>
+      <BusinessSelect />
+      <FeedBackType />
+      <ReviewContents />
+      <SubmitButton />
+    </>
+  )
 }
 
 export default ReviewRegister

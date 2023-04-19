@@ -1,0 +1,9 @@
+.business-select {
+  width: 100%;
+}
+.MuiCardActions-root button {
+  width: calc(50% - 4px);
+}
+.feedback-card h5 {
+  font-size: 1.25rem;
+}
