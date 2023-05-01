@@ -89,7 +89,7 @@ function Header() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.link}>
+                <MenuItem key={`${page.text}-mobile`}>
                   <Link to={page.link}>
                     <Typography textAlign="center">{page.text}</Typography>
                   </Link>
@@ -105,7 +105,7 @@ function Header() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page.link}
+                key={`${page.text}-pc`}
                 onClick={() => navigate(page.link)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >

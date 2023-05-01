@@ -7,3 +7,82 @@
 .feedback-card h5 {
   font-size: 1.25rem;
 }
+
+/* FileUpload Component Start */
+.dnd-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  cursor: pointer;
+}
+
+.dnd-wrapper .loading {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 80px;
+  padding-left: 20px;
+  border: 1px solid #1976d2;
+  border-radius: 4px;
+  color: #1565c0;
+}
+
+.upload-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.upload-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #1976d2;
+  border-radius: 4px;
+}
+
+.upload-btn:hover {
+  border-color: #1565c0;
+}
+
+.upload-btn svg {
+  width: 50px;
+  height: 50px;
+}
+
+.preview-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.preview-list li {
+  position: relative;
+  margin-left: 20px;
+}
+
+.preview-list li .img-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.preview-list li img {
+  width: auto;
+  height: 100%;
+}
+
+.preview-list li button {
+  position: absolute;
+  top: -12px;
+  right: 0;
+  padding: 0;
+  background: #fff;
+  border-radius: 0;
+}
+/* FileUpload Component End */

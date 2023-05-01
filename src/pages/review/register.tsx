@@ -4,6 +4,7 @@ import BusinessSelect from '../../components/review/businessSelect'
 import FeedBackType from '../../components/review/feedbackType'
 import ReviewContents from '../../components/review/contents'
 import SubmitButton from '../../components/review/SubmitButton'
+import FileUpload from '../../components/review/FileUpload'
 
 const ReviewRegister = () => {
   return (
@@ -11,6 +12,7 @@ const ReviewRegister = () => {
       <BusinessSelect />
       <FeedBackType />
       <ReviewContents />
+      <FileUpload />
       <SubmitButton />
     </>
   )
