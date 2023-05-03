@@ -9,7 +9,7 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => (
   <Container maxWidth="sm">
     <Header />
-    <Box sx={{ pt: 3 }}>{children}</Box>
+    <Box>{children}</Box>
   </Container>
 )
 export default Layout
